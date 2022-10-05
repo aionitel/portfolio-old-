@@ -2,7 +2,7 @@ import React from 'react'
 
 const Layout: React.FC = ({ children }: any) => {
   return (
-    <div>
+    <div className='flex min-h-screen min-w-screen justify-center'>
       <main>
         {children}
       </main>
