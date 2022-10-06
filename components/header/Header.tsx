@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ThemeSwitch from './ThemeSwitch';
 import { BiAtom } from 'react-icons/bi'
 
 const Header: React.FC = () => {
+  const [hover, setHover] = useState<boolean>(false);
+
   return (
     <div className='flex justify-between w-screen'>
-      <div className='flex'>
-        <BiAtom className='text-3xl m-4 transition-all duration-300 hover:rotate-180' />
-        <h1 className='font-bold text-2xl font-joesphSans'>Alex Ionitel</h1>
+      <div className='flex hover:cursor-pointer text-3xl' onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)}>
+        <BiAtom style={{ transform: hover ? 'rotate(270deg)' : '' }} className='transition-all duration-500' />
+        <h1>Alex Ionitel</h1>
       </div>
       <ThemeSwitch />
     </div>
