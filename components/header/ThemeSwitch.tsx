@@ -8,7 +8,7 @@ const ThemeSwitch: React.FC = () => {
 
   return (
     <div className='text-5xl'>
-      {theme === 'dark' ? <MdDarkMode onClick={() => setTheme('light')} /> : <BsSun onClick={() => {setTheme('dark')}} />}
+      {theme === 'dark' ? <BsSun onClick={() => setTheme('light')} /> : <MdDarkMode onClick={() => {setTheme('dark')}} />}
     </div>
   )
 }
