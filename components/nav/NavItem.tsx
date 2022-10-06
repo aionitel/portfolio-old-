@@ -1,8 +1,18 @@
+import Link from 'next/link';
 import React from 'react'
 
-const NavItem: React.FC = () => {
+interface NavItemProps {
+  data: {
+    title: string;
+    path: string;
+  }
+}
+
+const NavItem: React.FC<NavItemProps> = ({ data }) => {
   return (
-    <div>NavItem</div>
+    <Link href={data.path} passHref>
+      <h1>{data.title}</h1>
+    </Link>
   )
 }
 
