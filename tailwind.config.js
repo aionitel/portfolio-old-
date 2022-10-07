@@ -7,12 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ubuntu: ["Ubuntu"],
-        karla: ["Karla"],
-        quando: ["Quando"],
-        source: ["Source Sans Pro"],
-        noto: ["Noto Sans"],
-        inter: ["Inter"]
+        inter: ["Inter"],
+        'jose': ["Josefin Sans"],
+        'peralta': ['Peralta'],
+        'caveat': ['Caveat']
       },
       colors: {
         'white': '#fff',
