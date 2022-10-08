@@ -18,9 +18,6 @@ const Home: NextPage = () => {
           }}
         />
       </div>
-      <div className='h-screen bg-white dark:bg-white'>
-        hello
-      </div>
     </div>
   )
 }
