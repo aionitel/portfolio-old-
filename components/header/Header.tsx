@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ThemeSwitch from './ThemeSwitch';
-import { BiAtom } from 'react-icons/bi'
 import { GiOrangeSlice } from 'react-icons/gi'
 
 const Header: React.FC = () => {

@@ -1,9 +1,13 @@
 import type { NextPage } from 'next'
+import Head from 'next/head';
 import TypewriterComponent from 'typewriter-effect';
 
 const Home: NextPage = () => {
   return (
     <div>
+      <Head>
+        <title>Alex Ionitel</title>
+      </Head>
       <div
         className='h-screen'
         style={{
