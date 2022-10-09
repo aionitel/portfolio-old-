@@ -9,16 +9,15 @@ const Home: NextPage = () => {
         <title>Alex Ionitel</title>
       </Head>
       <div
-        className='h-screen'
-        style={{
-          fontSize: 0
-        }}
+        className='text-center lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72'
       >
         <TypewriterComponent 
           options={{
-            'strings': ['Welcome to my homepage.'],
+            'strings': ['Welcome to my site.', 'I am a full stack developer working out of Canada.'],
             autoStart: true,
             loop: true,
+            delay: 70,
+            deleteSpeed: 50
           }}
         />
       </div>
