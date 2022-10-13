@@ -6,7 +6,12 @@ const ScrollAbout: React.FC = () => {
     <div>
       <ScrollContainer>
         <ScrollPage>
-          hello
+          <div className='flex-row'>
+            <h1>About</h1>
+            <div>
+              Another
+            </div>
+          </div>
         </ScrollPage>
       </ScrollContainer>
     </div>

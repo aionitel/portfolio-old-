@@ -12,25 +12,27 @@ const Home: NextPage = () => {
       <Head>
         <title>Alex Ionitel</title>
       </Head>
-      <div
-        className='text-center flex lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72 h-[600px] lg:h-[700px]'
-      >
-        <TypewriterComponent
-          options={{
-            strings: ["Hello there!", "I'm Alex Ionitel.", "I am a full stack developer that loves to learn."],
-            autoStart: true,
-            deleteSpeed: 50,
-            delay: 75,
-            loop: true,
-          }}
-        />
+      <div className='h-screen'>
+        <div
+          className='text-center flex lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72 h-[600px] lg:h-[700px]'
+        >
+          <TypewriterComponent
+            options={{
+              strings: ["Hello there!", "I'm Alex Ionitel.", "I am a full stack developer that loves to learn."],
+              autoStart: true,
+              deleteSpeed: 50,
+              delay: 75,
+              loop: true,
+            }}
+          />
+        </div>
+        <div className='flex justify-center text-7xl'>
+          <BiDownvote className='animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
+            window.scrollTo({ top: 1000, behavior: 'smooth' })
+          }} />
+        </div>
       </div>
-      <div className='flex justify-center text-7xl'>
-        <BiDownvote className='animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
-          window.scrollTo({ top: 0, behavior: 'smooth' })
-        }} />
-      </div>
-      <div>
+      <div className='flex justify-center'>
         <DynamicScrollAbout />
       </div>
     </div>
