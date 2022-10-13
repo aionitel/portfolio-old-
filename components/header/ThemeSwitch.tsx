@@ -7,7 +7,7 @@ const ThemeSwitch: React.FC = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className='text-5xl lg:text-4xl m-3 hover:cursor-pointer transition-all duration-500'>
+    <div className='text-5xl lg:text-4xl m-3 hover:cursor-pointer transition-all duration-500 hover:scale-110'>
       {theme === 'dark' ? <BsSun onClick={() => setTheme('light')} /> : <MdDarkMode onClick={() => {setTheme('dark')}} />}
     </div>
   )

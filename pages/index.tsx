@@ -2,8 +2,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import TypewriterComponent from 'typewriter-effect';
 import { BiDownvote } from 'react-icons/bi'
+import dynamic from 'next/dynamic';
 
 const Home: NextPage = () => {
+  const DynamicScrollAbout = dynamic(() => import('../components/scroll/ScrollAbout'), { ssr: false });
+
   return (
     <div>
       <Head>
@@ -12,12 +15,13 @@ const Home: NextPage = () => {
       <div
         className='text-center lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72 h-[600px] lg:h-[700px]'
       >
-        <TypewriterComponent 
+        <TypewriterComponent
           options={{
-            strings: ['Hello'],
+            strings: ["Hello there!", "I'm Alex Ionitel.", "I am a full stack developer that loves to learn."],
             autoStart: true,
             deleteSpeed: 50,
-            delay: 100
+            delay: 75,
+            loop: true,
           }}
         />
       </div>
@@ -25,9 +29,6 @@ const Home: NextPage = () => {
         window.scrollTo({ top: 700, behavior: 'smooth' })
       }}>
         <BiDownvote />
-      </div>
-      <div className=''>
-
       </div>
     </div>
   )
