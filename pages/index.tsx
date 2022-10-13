@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <title>Alex Ionitel</title>
       </Head>
       <div
-        className='text-center lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72 h-[600px] lg:h-[700px]'
+        className='text-center flex lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72 h-[600px] lg:h-[700px]'
       >
         <TypewriterComponent
           options={{
@@ -25,10 +25,13 @@ const Home: NextPage = () => {
           }}
         />
       </div>
-      <div className='flex justify-center text-7xl animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
-        window.scrollTo({ top: 700, behavior: 'smooth' })
-      }}>
-        <BiDownvote />
+      <div className='flex justify-center text-7xl'>
+        <BiDownvote className='animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        }} />
+      </div>
+      <div>
+        <DynamicScrollAbout />
       </div>
     </div>
   )

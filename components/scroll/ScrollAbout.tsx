@@ -6,6 +6,7 @@ const ScrollAbout: React.FC = () => {
     <div>
       <ScrollContainer>
         <ScrollPage>
+          hello
         </ScrollPage>
       </ScrollContainer>
     </div>
