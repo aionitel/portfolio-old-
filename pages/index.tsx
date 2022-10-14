@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
-import TypewriterComponent from 'typewriter-effect';
 import { BiDownvote } from 'react-icons/bi'
-import dynamic from 'next/dynamic';
+import { motion, useScroll } from 'framer-motion';
+import ScrollAbout from '../components/scroll/ScrollAbout';
 
 const Home: NextPage = () => {
-  const DynamicScrollAbout = dynamic(() => import('../components/scroll/ScrollAbout'), { ssr: false });
+  // nice bar at top of page that tracks user's scroll
+  const { scrollYProgress } = useScroll();
 
   return (
     <div>
@@ -16,15 +17,6 @@ const Home: NextPage = () => {
         <div
           className='text-center flex lg:text-left text-7xl lg:text-9xl my-8 lg:mx-72 h-[600px] lg:h-[700px]'
         >
-          <TypewriterComponent
-            options={{
-              strings: ["Hello there!", "I'm Alex Ionitel.", "I am a full stack developer that loves to learn."],
-              autoStart: true,
-              deleteSpeed: 50,
-              delay: 75,
-              loop: true,
-            }}
-          />
         </div>
         <div className='flex justify-center text-7xl'>
           <BiDownvote className='animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
@@ -32,8 +24,8 @@ const Home: NextPage = () => {
           }} />
         </div>
       </div>
-      <div className='flex justify-center'>
-        <DynamicScrollAbout />
+      <div style={{ scaleX: scrollYProgress }} className='flex-row justify-center'>
+        <ScrollAbout />
       </div>
     </div>
   )

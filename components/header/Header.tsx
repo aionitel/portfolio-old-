@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
-    <div className='flex justify-between w-screen sticky top-0 z-[1000] backdrop-blur-sm'>
+    <div className='flex justify-between sticky top-0 z-[1000] backdrop-blur-sm'>
       <div className='flex hover:cursor-pointer m-3 lg:ml-5 lg:mt-2 transition-all text-4xl lg:text-3xl' onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)} onClick={() => {
         window.scrollTo({top: 0, behavior: 'smooth'}); // smoothly scrolling to top of page
       }}>
