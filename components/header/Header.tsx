@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 
   return (
     <div className='flex justify-between sticky top-0 z-[1000] backdrop-blur-sm'>
-      <div className='flex hover:cursor-pointer m-3 lg:ml-5 lg:mt-2 transition-all text-4xl lg:text-3xl' onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)} onClick={() => {
+      <div className='flex hover:cursor-pointer m-3 transition-all text-4xl lg:text-3xl' onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)} onClick={() => {
         window.scrollTo({top: 0, behavior: 'smooth'}); // smoothly scrolling to top of page
       }}>
         <GiOrangeSlice style={{ transform: hover ? 'rotate(360deg)' : '' }} className='text-orange-500 transition-all duration-500 m-1.5' />
