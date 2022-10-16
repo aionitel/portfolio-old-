@@ -1,7 +1,11 @@
 import React from 'react'
 import Header from '../header/Header';
 
-const Layout: React.FC = ({ children }: any) => {
+interface LayoutProps {
+  children: any
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div>
       <main>
