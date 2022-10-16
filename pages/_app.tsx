@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="icon" href="favicon.png" />
       </Head>
-      <ThemeProvider attribute="class">
+      <ThemeProvider>
         <Layout>
           <Component {...pageProps} />
         </Layout>
