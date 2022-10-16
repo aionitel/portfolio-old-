@@ -19,7 +19,7 @@ const Home: NextPage = () => {
             window.scrollTo({ top: screen.height, behavior: 'smooth' })
           }} />
           <BiDownvote className='hidden lg:block animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
-            window.scrollTo({ top: screen.height - 100, behavior: 'smooth' })
+            window.scrollTo({ top: screen.height - 80, behavior: 'smooth' })
           }} />
         </div>
       </div>
