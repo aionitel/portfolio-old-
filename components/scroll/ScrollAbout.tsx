@@ -24,17 +24,17 @@ const ScrollAbout: React.FC = () => {
         >ABOUT</motion.h1>
       </div>
       <div className='flex justify-center'>
-        <div className='flex-row lg:flex lg:ml-20 justify-center mt-8 lg:mt-20 lg:text-center'>
+        <div className='flex-row lg:flex lg:ml-20 justify-center mt-8 lg:mt-20 text-center'>
           <div className='flex-row my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-5'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-5 ml-14'
               onMouseOver={() => setHover('laptop')} onMouseOut={() => setHover("")}
             >
               <div className='text-7xl mt-4'>
                 {hover === 'laptop' ? <FaLaptopCode /> : <FaLaptop />}
               </div>
             </div>
-            <h1 className='font-bold text-2xl my-2'>Responsive</h1>
+            <h1 className='font-bold text-2xl my-4'>Responsive</h1>
             <h1 
               className='text-chartGray text-lg'
             >
@@ -44,16 +44,16 @@ const ScrollAbout: React.FC = () => {
               <br /> (Try this on mobile, 
               <br /> it looks great!)</h1>
           </div>
-          <div className='flex-row lg:mx-20 my-8'>
+          <div className='flex-row lg:mx-20 my-12'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12 ml-14'
               onMouseOver={() => setHover('server')} onMouseOut={() => setHover("")}
             >
               <div className='text-7xl mt-4'>
                 {hover === 'server' ? <TbServerOff /> : <TbServer />}
               </div>
             </div>
-            <h1 className='font-bold text-2xl my-2'>Full-Stack</h1>
+            <h1 className='font-bold text-2xl my-4'>Full-Stack</h1>
             <h1
               className='text-chartGray text-lg'
             >
@@ -66,14 +66,14 @@ const ScrollAbout: React.FC = () => {
           </div>
           <div className='flex-row my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12 ml-14'
               onMouseOver={() => setHover('bulb')} onMouseOut={() => setHover("")}
             >
               <div className='mt-5 text-7xl'>
                 {hover === 'bulb' ? <RiLightbulbFlashLine /> : <RiLightbulbLine />}
               </div>
             </div>
-            <h1 className='font-bold text-2xl my-2 ml-4 lg:ml-0'>Intuitive</h1>
+            <h1 className='font-bold text-2xl ml-4 lg:ml-0 my-4'>Intuitive</h1>
             <h1
               className='text-chartGray text-lg'
             >
@@ -87,12 +87,12 @@ const ScrollAbout: React.FC = () => {
           </div>
           <div className='flex-row lg:mx-20 my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-10'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-10 ml-14'
               onMouseOver={() => setHover('rocket')} onMouseOut={() => setHover("")}
             >
               <IoIosRocket className={hover === 'rocket' ? 'mt-5 animate-bounce' : 'mt-5'} />
             </div>
-            <h1 className='font-bold text-2xl my-2 ml-7 lg:ml-0'>Fast</h1>
+            <h1 className='font-bold text-2xl my-4'>Fast</h1>
             <h1
               className='text-chartGray text-lg'
             >
