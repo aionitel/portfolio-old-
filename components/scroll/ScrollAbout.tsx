@@ -1,31 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { BiServer } from 'react-icons/bi'
 import { HiOutlineDeviceMobile } from 'react-icons/hi'
 import { IoIosRocket } from 'react-icons/io'
 import { MdOutlinePhonelink } from 'react-icons/md'
 import { IconType } from 'react-icons';
+import { HiServer } from 'react-icons/hi'
 
 interface AboutDataProps {
-  Icon: IconType,
-  text: string
+  Icon: IconType;
+  title: string;
+  text: string;
 }
 
 const AboutData: AboutDataProps[] = [
   {
     Icon: MdOutlinePhonelink,
-    text: 'Responsive',
+    title: 'Responsive',
+    text: 'Responsive designs and fast load times.',
   },
   {
-    Icon: BiServer,
+    Icon: HiServer,
+    title: 'Full Stack',
     text: 'server'
   },
   {
     Icon: HiOutlineDeviceMobile,
+    title: 'Mobile',
     text: 'idk'
   },
   {
     Icon: IoIosRocket,
+    title: 'Fast',
     text: 'fast'
   }
 ]
@@ -46,11 +52,11 @@ const ScrollAbout: React.FC = () => {
           }}
         >ABOUT</motion.h1>
       </div>
-      <div className='flex-row lg:flex ml-36 lg:ml-0 justify-center mt-20'>
+      <div className='flex-row lg:flex lg:ml-0 align-center justify-center mt-16 text-center'>
         {
           AboutData.map(item => (
             <div key=''>
-              <ScrollAboutItem Icon={item.Icon} text={item.text} />
+              <ScrollAboutItem Icon={item.Icon} title={item.title} text={item.text} />
             </div>
           ))
         }
@@ -59,13 +65,15 @@ const ScrollAbout: React.FC = () => {
   )
 }
 
-const ScrollAboutItem: React.FC<AboutDataProps> = ({ Icon, text }) => {
+const ScrollAboutItem: React.FC<AboutDataProps> = ({ Icon, title, text }) => {
+  const [hover, setHover] = useState<boolean>(false);
+
   return (
-    <div className='flex-row lg:mx-20 my-8'>
-      <div className='bg-teal-400 w-32 h-32 rounded-lg text-7xl flex justify-center'>
+    <div className='pl-36 lg:pl-0 lg:mx-20 my-8 text-center' onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)}>
+      <div className='bg-teal-400 w-28 h-28 rounded-lg text-6xl flex justify-center'>
         <Icon className='mt-5' />
       </div>
-      <h1>{text}</h1>
+      <h1 className='my-2 text-xl font-bold mr-32 lg:mr-0'>{title}</h1>
     </div>
   )
 }
