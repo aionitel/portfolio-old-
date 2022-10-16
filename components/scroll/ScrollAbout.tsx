@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion';
-import { HiOutlineDeviceMobile } from 'react-icons/hi'
 import { IoIosRocket } from 'react-icons/io'
-import { MdOutlinePhonelink } from 'react-icons/md'
 import { TbServer, TbServerOff } from 'react-icons/tb'
 import { BsPhone, BsPhoneVibrate } from 'react-icons/bs'
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa'
