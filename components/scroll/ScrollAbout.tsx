@@ -44,7 +44,7 @@ const ScrollAbout: React.FC = () => {
               <br /> (Try this on mobile, 
               <br /> it looks great!)</h1>
           </div>
-          <div className='flex-row lg:mx-20 my-12'>
+          <div className='flex-row lg:mx-20 my-8'>
             <div 
               className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12 ml-14'
               onMouseOver={() => setHover('server')} onMouseOut={() => setHover("")}

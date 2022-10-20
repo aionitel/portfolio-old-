@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import { BiDownvote } from 'react-icons/bi'
 import ScrollAbout from '../components/scroll/ScrollAbout';
+import Projects from '../components/scroll/Projects';
 
 const Home: NextPage = () => {
   return (
@@ -23,8 +24,11 @@ const Home: NextPage = () => {
           }} />
         </div>
       </div>
-      <div className='h-screen'>
+      <div>
         <ScrollAbout />
+      </div>
+      <div>
+        <Projects />
       </div>
     </div>
   )
