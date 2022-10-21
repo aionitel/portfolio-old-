@@ -5,7 +5,7 @@ const width = 350;
 
 const Projects: React.FC = () => {
   return (
-    <div className='flex-row my-20'>
+    <div className='flex-row'>
       <motion.h1
         className='text-4xl underline underline-offset-[20px] lg:underline-offset-[35px] decoration-dotted text-center'
         initial='hidden'
@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
           hidden: { opacity: 0, scale: 0 }
         }}
       >PROJECTS</motion.h1>
-      <div className='flex-row lg:absolute lg:left-0 lg:translate-x-1/2 mt-24'>
+      <div className='flex-row mt-24'>
         <div className='flex-row lg:flex text-center lg:text-left'>
           <img src='https://i.imgur.com/xXTzqZy.png' style={{ width }} />
           <div>

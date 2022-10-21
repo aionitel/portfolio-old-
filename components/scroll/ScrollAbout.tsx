@@ -9,7 +9,7 @@ const ScrollAbout: React.FC = () => {
   const [hover, setHover] = useState<string>("");
 
   return (
-    <div className='flex-row'>
+    <div className='flex-row mb-20'>
       <div className='text-center text-4xl font-inter'>
         <motion.h1
           className='underline underline-offset-[20px] lg:underline-offset-[35px] decoration-dotted'
@@ -23,11 +23,11 @@ const ScrollAbout: React.FC = () => {
           }}
         >ABOUT</motion.h1>
       </div>
-      <div className='flex justify-center'>
+      <div className='flex justify-center my-10'>
         <div className='flex-row lg:flex lg:ml-20 justify-center mt-8 lg:mt-20 text-center'>
           <div className='flex-row my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-5 ml-14'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center left-0 right-0 mx-auto'
               onMouseOver={() => setHover('laptop')} onMouseOut={() => setHover("")}
             >
               <div className='text-7xl mt-4'>
@@ -46,7 +46,7 @@ const ScrollAbout: React.FC = () => {
           </div>
           <div className='flex-row lg:mx-20 my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12 ml-14'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center left-0 right-0 mx-auto'
               onMouseOver={() => setHover('server')} onMouseOut={() => setHover("")}
             >
               <div className='text-7xl mt-4'>
@@ -66,7 +66,7 @@ const ScrollAbout: React.FC = () => {
           </div>
           <div className='flex-row my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-12 ml-14'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center left-0 right-0 mx-auto'
               onMouseOver={() => setHover('bulb')} onMouseOut={() => setHover("")}
             >
               <div className='mt-5 text-7xl'>
@@ -87,7 +87,7 @@ const ScrollAbout: React.FC = () => {
           </div>
           <div className='flex-row lg:mx-20 my-8'>
             <div 
-              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center lg:ml-10 ml-14'
+              className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center left-0 right-0 mx-auto'
               onMouseOver={() => setHover('rocket')} onMouseOut={() => setHover("")}
             >
               <IoIosRocket className={hover === 'rocket' ? 'mt-5 animate-bounce' : 'mt-5'} />
