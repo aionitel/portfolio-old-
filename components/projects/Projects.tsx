@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { BiCoin } from 'react-icons/bi';
 import { ProjectType } from '../utils/types';
 import ProjectItem from './ProjectItem';
+import { AiOutlineApi } from 'react-icons/ai'
 
 const ProjectData: ProjectType[] = [
   {
@@ -12,6 +13,14 @@ const ProjectData: ProjectType[] = [
     image: 'https://i.imgur.com/xXTzqZy.png',
     website: 'test',
     code: 'https://github.com/oranges0da/pennyeth'
+  },
+  {
+    Icon: AiOutlineApi,
+    title: 'Entertainment API',
+    desc: 'Public API that is up for consumption and completely free to use. Written in Go / Golang and using the Gin framework. (HTTP API framework for Go)',
+    image: 'https://i.imgur.com/I9LVx4z.jpg',
+    website: 'test',
+    code: 'https://github.com/oranges0da/entertainment-api'
   }
 ]
 
