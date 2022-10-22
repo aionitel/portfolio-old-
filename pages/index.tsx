@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import { BiDownvote } from 'react-icons/bi'
-import ScrollAbout from '../components/scroll/ScrollAbout';
+import About from '../components/about/About';
 import Projects from '../components/projects/Projects';
 
 const Home: NextPage = () => {
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div>
-        <ScrollAbout />
+        <About />
       </div>
       <div>
         <Projects />

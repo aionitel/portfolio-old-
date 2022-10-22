@@ -4,12 +4,13 @@ import { BiCoin } from 'react-icons/bi';
 import { ProjectType } from '../utils/types';
 import ProjectItem from './ProjectItem';
 import { AiOutlineApi } from 'react-icons/ai'
+import { GiStrawberry } from 'react-icons/gi'
 
 const ProjectData: ProjectType[] = [
   {
     Icon: BiCoin,
     title: "PennyETH",
-    desc: 'A crypto portfolio web app built with Next.js and Ethers.js that allows users to view crypto assets and browse the Bitcoin and Ethereum blockchain. Users can even connect their Metamask wallet to send and receive Ethereum.',
+    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view crypto assets and browse the Bitcoin and Ethereum blockchain. Users can even connect their Metamask wallet to send and receive Ethereum.',
     image: 'https://i.imgur.com/xXTzqZy.png',
     website: 'test',
     code: 'https://github.com/oranges0da/pennyeth'
@@ -21,6 +22,14 @@ const ProjectData: ProjectType[] = [
     image: 'https://i.imgur.com/I9LVx4z.jpg',
     website: 'test',
     code: 'https://github.com/oranges0da/entertainment-api'
+  },
+  {
+    Icon: GiStrawberry,
+    title: 'Dippped',
+    desc: 'Full stack and completely custom online merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built in Node.js with Express, and Stripe as a payment processor.',
+    image: 'https://i.imgur.com/aYEMumV.png',
+    website: 'test',
+    code: 'https://github.com/oranges0da/dippped'
   }
 ]
 

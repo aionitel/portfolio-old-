@@ -5,7 +5,7 @@ import { TbServer, TbServerOff } from 'react-icons/tb'
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa'
 import { RiLightbulbLine, RiLightbulbFlashLine } from 'react-icons/ri'
 
-const ScrollAbout: React.FC = () => {
+const About: React.FC = () => {
   const [hover, setHover] = useState<string>("");
 
   return (
@@ -78,7 +78,7 @@ const ScrollAbout: React.FC = () => {
               className='text-chartGray text-lg'
             >
               Not only is my UI/UX,
-              <br /> intuitive, I am aswell!
+              <br /> intuitive, I am as well!
               <br /> I am very eager to learn
               <br /> and adapt in a collaborative
               <br /> environment, with other
@@ -109,4 +109,4 @@ const ScrollAbout: React.FC = () => {
   )
 }
 
-export default ScrollAbout;
+export default About;
