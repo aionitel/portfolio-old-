@@ -18,6 +18,7 @@ module.exports = {
         'cyan': '#00ffff',
         'blue': '#1552F0',
         'cream': '#F0E7DB',
+        'creamAgain': '#F1E9DE',
         'lead': '#201f24',
         'gray': '#171717',
         'lightgray': '#202020',
@@ -25,7 +26,9 @@ module.exports = {
         "chartGray": "#666",
         'almostBlack': "#141414",
         "pink": '#FFCCCC',
-        "black": '#000000'
+        "black": '#000000',
+        'ghostwhite': '#f8f8ff',
+        'silverPink': '#c4aead'
       }
     },
   },
