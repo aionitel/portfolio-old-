@@ -16,14 +16,16 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <h1>{project.title}</h1>
         </div>
         <p className='text-chartGray ml-1'>{project.desc}</p>
-      </div>
-      <div className='flex text-end lg:mt-52 justify-center text-4xl'>
-        <a className='hover:cursor-pointer mx-2 bg-orange-400 rounded-md p-2 hover:bg-orange-500 transition-all duration-300'>
-          <BiLinkExternal href={project.website} target='_blank' />
-        </a>
-        <a href={project.code} target='_blank' rel="noreferrer" className='rounded-md p-2 bg-orange-400 hover:bg-orange-500 transition-all duration-300'>
-          <BiCodeAlt />
-        </a>
+        <div className='flex'>
+          <a className='hover:cursor-pointer mx-2 bg-orange-400 rounded-md hover:bg-orange-500 flex' data-tip={<div></div>}>
+            <h1>Visit Site</h1>
+            <BiLinkExternal href={project.website} target='_blank'  />
+          </a>
+          <a href={project.code} target='_blank' rel="noreferrer" className='rounded-md bg-orange-400 hover:bg-orange-500 flex' data-tip={<div></div>}>
+            <h1>View Code</h1>
+            <BiCodeAlt />
+          </a>
+        </div>
       </div>
     </div>
   )
