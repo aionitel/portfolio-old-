@@ -16,8 +16,8 @@ const Desk: React.FC = () => {
     <div>
       <Lottie 
 	      options={defaultOptions}
-        height={400}
-        width={800}
+        height={150}
+        width={300}
       />
     </div>
   )
