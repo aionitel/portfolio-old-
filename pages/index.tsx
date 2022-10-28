@@ -4,7 +4,6 @@ import { BiDownvote } from 'react-icons/bi'
 import About from '../components/about/About';
 import Projects from '../components/projects/Projects';
 import TypewriterComponent from 'typewriter-effect';
-import Desk from '../components/animation/Desk';
 
 const Home: NextPage = () => {
   return (
@@ -45,7 +44,6 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div>
-        <Desk />
         <About />
       </div>
       <div>

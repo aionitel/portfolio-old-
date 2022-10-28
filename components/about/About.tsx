@@ -4,6 +4,7 @@ import { IoIosRocket } from 'react-icons/io'
 import { TbServer, TbServerOff } from 'react-icons/tb'
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa'
 import { RiLightbulbLine, RiLightbulbFlashLine } from 'react-icons/ri'
+import Cat from '../animation/Cat';
 
 const About: React.FC = () => {
   const [hover, setHover] = useState<string>("");
@@ -11,8 +12,8 @@ const About: React.FC = () => {
   return (
     <div className='flex-row mb-20'>
       <div className='text-center text-4xl font-inter'>
+        <Cat />
         <motion.h1
-          className='underline underline-offset-[20px] lg:underline-offset-[35px] decoration-dotted'
           initial='hidden'
           whileInView="visible"
           viewport={{ once: true }}
