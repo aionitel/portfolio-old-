@@ -4,6 +4,7 @@ import { BiDownvote } from 'react-icons/bi'
 import About from '../components/about/About';
 import Projects from '../components/projects/Projects';
 import TypewriterComponent from 'typewriter-effect';
+import Typewriter from '../components/about/Typewriter';
 
 const Home: NextPage = () => {
   return (
@@ -13,26 +14,10 @@ const Home: NextPage = () => {
       </Head>
       <div className='h-screen'>
         <div
-          className='text-center flex lg:text-left text-5xl lg:text-6xl my-8 w-screen'
+          className='text-center flex my-8 ml-2'
           style={{ height: '60vh' }}
         >
-          <h1 className='mr-2'>Hi! I'm a full stack developer working out of Canada 🇨🇦 and I love working with</h1>
-          <TypewriterComponent
-            options={{
-              strings: [
-                "Next.JS",
-                "Node",
-                "React Native.",
-                "Tailwind CSS.",
-                "Express.",
-                "Stripe."
-              ],
-              delay: 60,
-              autoStart: true,
-              loop: true,
-              deleteSpeed: 75
-            }}
-          />
+          <Typewriter />
         </div>
         <div className='flex justify-center text-7xl'>
           <BiDownvote className='block lg:hidden animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {

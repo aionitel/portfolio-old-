@@ -4,7 +4,8 @@ import { BiCoin } from 'react-icons/bi';
 import { ProjectType } from '../utils/types';
 import ProjectItem from './ProjectItem';
 import { AiOutlineApi } from 'react-icons/ai'
-import { GiStrawberry } from 'react-icons/gi'
+import { MdOutlineStorefront } from 'react-icons/md'
+
 import Desk from '../animation/Desk';
 
 const ProjectData: ProjectType[] = [
@@ -25,7 +26,7 @@ const ProjectData: ProjectType[] = [
     code: 'https://github.com/oranges0da/entertainment-api'
   },
   {
-    Icon: GiStrawberry,
+    Icon: MdOutlineStorefront,
     title: 'Dippped',
     desc: 'Full stack and completely custom online merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built in Node.js with Express, and Stripe as a payment processor.',
     image: 'https://i.imgur.com/aYEMumV.png',
@@ -40,7 +41,7 @@ const Projects: React.FC = () => {
       <div>
         <Desk />
         <motion.h1
-          className='text-4xl text-center mt-10'
+          className='text-4xl text-center mt-8'
           initial='hidden'
           whileInView="visible"
           viewport={{ once: true }}

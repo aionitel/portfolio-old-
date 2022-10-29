@@ -13,19 +13,19 @@ const About: React.FC = () => {
     <div className='flex-row mb-20'>
       <div className='text-center text-4xl font-inter'>
         <Cat />
-        <motion.h1
-          initial='hidden'
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, scale: 1, translateX: 0 },
-            hidden: { opacity: 0, scale: 0 }
-          }}
-        >ABOUT</motion.h1>
+        <h1>ABOUT</h1>
       </div>
-      <div className='flex justify-center my-10'>
-        <div className='flex-row lg:flex lg:ml-20 justify-center mt-8 lg:mt-20 text-center'>
+      <motion.div 
+        className='flex justify-center my-10'
+        initial='hidden'
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, scale: 1, translateX: 0 },
+          hidden: { opacity: 0, scale: 0 }
+        }}>
+        <div className='flex-row lg:flex lg:ml-20 justify-center mt-8 text-center'>
           <div className='flex-row my-8'>
             <div 
               className='bg-sky-400 w-28 h-28 rounded-lg text-6xl flex justify-center left-0 right-0 mx-auto'
@@ -105,7 +105,7 @@ const About: React.FC = () => {
             </h1>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
