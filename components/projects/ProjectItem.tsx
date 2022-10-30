@@ -39,11 +39,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         </div>
         <p className='text-chartGray ml-1'>{project.desc}</p>
         <div className='flex justify-center lg:justify-end mt-16'>
-          <a className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4' data-tip={<div></div>}>
+          <a className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
             <h1 className='py-2 px-2.5'>Visit Site</h1>
             <BiLinkExternal className='text-3xl mt-[5px] pr-1.5' />
           </a>
-          <a href={project.code} target='_blank' rel="noreferrer" className='rounded-lg bg-orange-300 hover:bg-orange-400 hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4' data-tip={<div></div>}>
+          <a href={project.code} target='_blank' rel="noreferrer" className='rounded-lg bg-orange-300 hover:bg-orange-400 hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
             <h1 className='p-2'>View Code</h1>
             <BiCodeAlt className='text-3xl mt-[5px] pr-1.5' />
           </a>

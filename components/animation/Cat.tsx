@@ -22,7 +22,7 @@ const Cat: React.FC = () => {
           width={200}
         />
       </a>
-      <ReactTooltip />
+      <ReactTooltip place='top' />
     </div>
   )
 }
