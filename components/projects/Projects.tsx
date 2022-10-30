@@ -20,7 +20,7 @@ const ProjectData: ProjectType[] = [
   {
     Icon: AiOutlineApi,
     title: 'Entertainment API',
-    desc: 'Public API that is up for consumption and completely free to use. Serves up information about movies, TV series, books, and music. Written in Go / Golang and using the Gin framework. (HTTP API framework for Go)',
+    desc: 'Public API that is up for consumption and completely free to use. Serves up information about movies, TV series, books, and music. Built with Go / Golang and Gin.',
     image: 'https://i.imgur.com/I9LVx4z.jpg',
     website: 'test',
     code: 'https://github.com/oranges0da/entertainment-api'
@@ -28,7 +28,7 @@ const ProjectData: ProjectType[] = [
   {
     Icon: MdOutlineStorefront,
     title: 'Dippped',
-    desc: 'Full stack and completely custom online merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built in Node.js with Express, and Stripe as a payment processor.',
+    desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, and using Stripe as a payment processor.',
     image: 'https://i.imgur.com/aYEMumV.png',
     website: 'test',
     code: 'https://github.com/oranges0da/dippped'

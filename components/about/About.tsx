@@ -15,16 +15,16 @@ const About: React.FC = () => {
         <Cat />
         <h1>ABOUT</h1>
       </div>
-      <motion.div 
-        className='flex justify-center my-10'
-        initial='hidden'
+      <motion.div
+        initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         transition={{ duration: 1 }}
         variants={{
-          visible: { opacity: 1, scale: 1, translateX: 0 },
-          hidden: { opacity: 0, scale: 0 }
-        }}>
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 1 }
+        }}
+      >
         <div className='flex-row lg:flex lg:ml-20 justify-center mt-8 text-center'>
           <div className='flex-row my-8'>
             <div 

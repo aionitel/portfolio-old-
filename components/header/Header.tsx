@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <GiOrangeSlice style={{ transform: hover ? 'rotate(360deg)' : '' }} className='text-orange-500 transition-all duration-500 m-1.5' />
         <h1 className='mt-0.5 font-caveat'>Alex Ionitel</h1>
       </div>
-      <div className='lg:mt-1.5 lg:mr-2'>
+      <div className='m-4'>
         <ThemeSwitch />
       </div>
     </div>
