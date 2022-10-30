@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <a className='mx-3 hover:scale-110 transition-all duration-300' href='https://github.com/oranges0da' target='_blank' rel="noreferrer">
           <BsGithub />
         </a>
-        <a className='hover:scale-110 transition-all duration-300 mr-auto' href='https://www.linkedin.com/in/alex-ionitel-27b625254' target='_blank' rel="noreferrer">
+        <a className='hover:scale-110 transition-all duration-300 mr-auto' href='https://www.linkedin.com/in/alex-ionitel-726393255' target='_blank' rel="noreferrer">
           <BsLinkedin />
         </a>
       </div>
