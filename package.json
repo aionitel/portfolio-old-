@@ -19,6 +19,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-lottie": "^1.2.3",
+    "react-tooltip": "^4.4.3",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

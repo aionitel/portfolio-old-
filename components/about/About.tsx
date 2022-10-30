@@ -11,8 +11,10 @@ const About: React.FC = () => {
 
   return (
     <div className='flex-row mb-20'>
-      <div className='text-center text-4xl font-inter'>
-        <Cat />
+      <div className='text-4xl font-inter lg:w-[170px] lg:mx-auto text-center lg:text-left'>
+        <div className='lg:ml-2'>
+          <Cat />
+        </div>
         <h1>ABOUT</h1>
       </div>
       <motion.div
