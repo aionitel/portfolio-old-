@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { BiDownvote } from 'react-icons/bi'
 import About from '../components/about/About';
 import Projects from '../components/projects/Projects';
-import TypewriterComponent from 'typewriter-effect';
 import Typewriter from '../components/about/Typewriter';
 
 const Home: NextPage = () => {
