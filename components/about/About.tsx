@@ -7,6 +7,7 @@ import { RiLightbulbLine, RiLightbulbFlashLine } from 'react-icons/ri'
 import Cat from '../animation/Cat';
 
 const About: React.FC = () => {
+  // to see which blue icon user is hovering over
   const [hover, setHover] = useState<string>("");
 
   return (

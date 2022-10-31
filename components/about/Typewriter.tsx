@@ -1,6 +1,7 @@
 import React from 'react'
 import TypewriterComponent from 'typewriter-effect';
 
+// typing effect that will play on top of page
 const Typewriter: React.FC = () => {
   return (
     <span className='lg:text-left text-4xl lg:text-9xl inline'>

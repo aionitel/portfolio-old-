@@ -3,6 +3,7 @@ import ThemeSwitch from './ThemeSwitch';
 import { GiOrangeSlice } from 'react-icons/gi'
 
 const Header: React.FC = () => {
+  // check if user is hovering over my name so spinning orange slice animation can play
   const [hover, setHover] = useState<boolean>(false);
 
   return (

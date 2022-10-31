@@ -3,6 +3,7 @@ import Lottie from 'react-lottie';
 import catAnimation from '../../animations/cat.json'
 import ReactTooltip from 'react-tooltip';
 
+// cat animation right above about section
 const Cat: React.FC = () => {
   const defaultOptions = {
     loop: true,
