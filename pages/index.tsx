@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       <div>
         <About />
       </div>
-      <div>
+      <div className='flex justify-center'>
         <Projects />
       </div>
     </div>
