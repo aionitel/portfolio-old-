@@ -15,7 +15,7 @@ const Cat: React.FC = () => {
 
   return (
     <div className='flex justify-center lg:w-28'>
-      <a href='https://www.github.com/oranges0da' target='__blank' data-tip='Click to see my Github!'>
+      <a href='https://www.github.com/oranges0da/portfolio' target='__blank' data-tip='Click to see the code for this site!'>
         <Lottie 
           options={defaultOptions}
           height={100}
