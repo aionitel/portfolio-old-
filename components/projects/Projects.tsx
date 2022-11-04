@@ -12,7 +12,7 @@ const ProjectData: ProjectType[] = [
   {
     Icon: BiCoin,
     title: "PennyETH",
-    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view crypto assets and browse the Bitcoin and Ethereum blockchain. Users can even connect their Metamask wallet to send and receive Ethereum.',
+    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view technical and financial data about several crypto assets. Users can even browse the Bitcoin and Ethereum blockchains to view blocks, transactions, and addresses. NFTs are also a feature! Users can even connect their Metamask wallet to send and receive Ethereum.',
     image: 'https://i.imgur.com/xXTzqZy.png',
     website: 'https://www.pennyeth.com',
     code: 'https://github.com/oranges0da/pennyeth'
