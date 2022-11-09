@@ -28,7 +28,7 @@ const ProjectData: ProjectType[] = [
   {
     Icon: MdOutlineStorefront,
     title: 'Dippped',
-    desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, and using Stripe as a payment processor.',
+    desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, using Stripe as a payment processor.',
     image: 'https://i.imgur.com/aYEMumV.png',
     website: 'test',
     code: 'https://github.com/oranges0da/dippped'
