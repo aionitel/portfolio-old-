@@ -7,4 +7,5 @@ export interface ProjectType {
   website: string;
   code: string;
   image: string;
+  showWeb: boolean;
 }

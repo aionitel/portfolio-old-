@@ -14,24 +14,27 @@ const ProjectData: ProjectType[] = [
     title: "PennyETH",
     desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view technical and financial data about several crypto assets. Users can even browse the Bitcoin and Ethereum blockchains to view blocks, transactions, and addresses. NFTs are also a feature! Users can even connect their Metamask wallet to send and receive Ethereum.',
     image: 'https://i.imgur.com/xXTzqZy.png',
-    website: 'https://www.pennyeth.com',
-    code: 'https://github.com/oranges0da/pennyeth'
+    website: 'https://pennyeth.com',
+    code: 'https://github.com/oranges0da/pennyeth',
+    showWeb: true
   },
   {
     Icon: AiOutlineApi,
     title: 'Entertainment API',
     desc: 'Public API that is up for consumption and completely free to use. Serves up information about movies, TV series, books, and music. Built with Go / Golang and Gin.',
     image: 'https://i.imgur.com/I9LVx4z.jpg',
-    website: 'test',
-    code: 'https://github.com/oranges0da/entertainment-api'
+    website: 'n/a',
+    code: 'https://github.com/oranges0da/entertainment-api',
+    showWeb: false
   },
   {
     Icon: MdOutlineStorefront,
     title: 'Dippped',
     desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, using Stripe as a payment processor.',
     image: 'https://i.imgur.com/aYEMumV.png',
-    website: 'test',
-    code: 'https://github.com/oranges0da/dippped'
+    website: 'https://dippedstation.com',
+    code: 'https://github.com/oranges0da/dippedstation',
+    showWeb: true
   }
 ]
 
