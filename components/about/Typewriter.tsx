@@ -4,8 +4,8 @@ import TypewriterComponent from 'typewriter-effect';
 // typing effect that will play on top of page
 const Typewriter: React.FC = () => {
   return (
-    <span className='lg:text-left text-4xl lg:text-9xl inline'>
-      <h1 className='inline mr-2'>Hi! Im a full stack developer working out of Canada 🇨🇦 and I love working with</h1>
+    <span className='lg:text-8xl text-4xl mx-6'>
+      <h1 className='inline mr-2'>Hi! I am a full stack developer working out of Canada 🇨🇦 who loves oranges 🍊 and I love working with...</h1>
       <TypewriterComponent
         options={{
           strings: [
@@ -16,7 +16,7 @@ const Typewriter: React.FC = () => {
             "Express",
             "Stripe",
             "Golang",
-            "PostgresSQL",
+            "PostgreSQL",
             "MongoDB",
             "Prisma"
           ],
