@@ -21,7 +21,7 @@ const ProjectData: ProjectType[] = [
   {
     Icon: AiOutlineApi,
     title: 'Entertainment API',
-    desc: 'Public API that is up for consumption and completely free to use. Serves up information about movies, TV series, books, and music. Built with Go / Golang and Gin.',
+    desc: 'Public API that is up for consumption and completely free to use. Serves up information about movies, TV series, books, and music. Built with Go / Golang and Gin. Click view movie to visit the api and recieve a response of my favourite movie!',
     image: 'https://i.imgur.com/I9LVx4z.jpg',
     website: 'n/a',
     code: 'https://github.com/oranges0da/entertainment-api',
