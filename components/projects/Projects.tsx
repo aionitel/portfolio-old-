@@ -6,8 +6,6 @@ import ProjectItem from './ProjectItem';
 import { AiOutlineApi } from 'react-icons/ai'
 import { MdOutlineStorefront } from 'react-icons/md'
 
-import Desk from '../animation/Desk';
-
 const ProjectData: ProjectType[] = [
   {
     Icon: BiCoin,
@@ -42,7 +40,6 @@ const Projects: React.FC = () => {
   return (
     <div className='flex-row'>
       <div>
-        <Desk />
         <motion.h1
           className='text-4xl text-center mt-8'
           initial='hidden'
