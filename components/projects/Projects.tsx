@@ -8,12 +8,12 @@ import { MdOutlineStorefront } from 'react-icons/md'
 
 const ProjectData: ProjectType[] = [
   {
-    Icon: BiCoin,
-    title: "PennyETH",
-    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view technical and financial data about several crypto assets. Users can even browse the Bitcoin and Ethereum blockchains to view blocks, transactions, and addresses. NFTs are also a feature! Users can even connect their Metamask wallet to send and receive Ethereum.',
-    image: 'https://i.imgur.com/xXTzqZy.png',
-    website: 'https://pennyeth.com',
-    code: 'https://github.com/oranges0da/pennyeth',
+    Icon: MdOutlineStorefront,
+    title: 'Dippped',
+    desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, using Stripe as a payment processor.',
+    image: 'https://i.imgur.com/aYEMumV.png',
+    website: 'https://dippedstation.com',
+    code: null,
     showWeb: true
   },
   {
@@ -26,12 +26,12 @@ const ProjectData: ProjectType[] = [
     showWeb: false
   },
   {
-    Icon: MdOutlineStorefront,
-    title: 'Dippped',
-    desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, using Stripe as a payment processor.',
-    image: 'https://i.imgur.com/aYEMumV.png',
-    website: 'https://dippedstation.com',
-    code: 'https://github.com/oranges0da/dippedstation',
+    Icon: BiCoin,
+    title: "PennyETH",
+    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view technical and financial data about several crypto assets. Users can even browse the Bitcoin and Ethereum blockchains to view blocks, transactions, and addresses. NFTs are also a feature! Users can even connect their Metamask wallet to send and receive Ethereum.',
+    image: 'https://i.imgur.com/xXTzqZy.png',
+    website: 'https://pennyeth.com',
+    code: 'https://github.com/oranges0da/pennyeth',
     showWeb: true
   }
 ]

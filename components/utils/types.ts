@@ -5,7 +5,7 @@ export interface ProjectType {
   title: string;
   desc: string;
   website: string;
-  code: string;
+  code: string | null;
   image: string;
   showWeb: boolean;
 }

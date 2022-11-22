@@ -3,6 +3,7 @@ import { BiLinkExternal, BiCodeAlt } from 'react-icons/bi'
 import { ProjectType } from '../utils/types';
 import { motion } from 'framer-motion'
 import { MdMovie } from 'react-icons/md'
+import { HiLockClosed } from 'react-icons/hi'
 
 interface ProjectItemProps {
   project: ProjectType;
@@ -39,7 +40,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <h1>{project.title}</h1>
         </div>
         <p className='text-chartGray ml-1'>{project.desc}</p>
-        <div className='flex justify-center lg:justify-end mt-16'>
+        <div className='flex justify-center lg:justify-end' style={{ marginTop: project.title === "PennyETH" ? 2 : 50 }}>
           { project.showWeb 
             ? 
             <a href={project.website} target='__blank' className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
@@ -52,10 +53,17 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               <MdMovie className='text-3xl mt-[5px] pr-1.5' />
             </a>
           }
-          <a href={project.code} target='_blank' rel="noreferrer" className='rounded-lg bg-orange-300 hover:bg-orange-400 hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
-            <h1 className='p-2'>View Code</h1>
-            <BiCodeAlt className='text-3xl mt-[5px] pr-1.5' />
-          </a>
+          {
+            project.code 
+            ? <a href={project.code} target='_blank' rel="noreferrer" className='rounded-lg bg-orange-300 hover:bg-orange-400 hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
+                <h1 className='p-2'>View Code</h1>
+                <BiCodeAlt className='text-3xl mt-[5px] pr-1.5' />
+              </a>
+            : <div className='rounded-lg bg-orange-300 flex'>
+                <h1 className='p-2'>Closed Source</h1>
+                <HiLockClosed className='text-3xl mt-[5px] pr-1.5' />
+              </div>
+          }
         </div>
       </motion.div>
     </div>
