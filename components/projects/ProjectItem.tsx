@@ -40,7 +40,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <h1>{project.title}</h1>
         </div>
         <p className='text-chartGray ml-1'>{project.desc}</p>
-        <div className='flex justify-center lg:justify-end' style={{ marginTop: project.title === "PennyETH" ? 2 : 50 }}>
+        <div className='flex justify-center lg:justify-end mt-14'>
           { project.showWeb 
             ? 
             <a href={project.website} target='__blank' className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
