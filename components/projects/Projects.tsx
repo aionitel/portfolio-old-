@@ -10,7 +10,7 @@ const ProjectData: ProjectType[] = [
   {
     Icon: BiCoin,
     title: "PennyETH",
-    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view technical and financial data about several crypto assets. Users can even browse the Bitcoin and Ethereum blockchains to view blocks, transactions, and addresses. NFTs are also a feature! Users can even connect their Metamask wallet to send and receive Ethereum.',
+    desc: 'A crypto web app built with Next.js, Tailwind CSS, and Ethers.js that allows users to view technical and financial data about several crypto assets. Users can even browse the Bitcoin and Ethereum blockchains to view detailed information about blocks, transactions, and addresses.',
     image: 'https://i.imgur.com/xXTzqZy.png',
     website: 'https://pennyeth.com',
     code: 'https://github.com/oranges0da/pennyeth',
@@ -21,7 +21,7 @@ const ProjectData: ProjectType[] = [
     title: 'Entertainment API',
     desc: 'Public API that is up for consumption and completely free to use. Serves up information about movies, TV series, books, and music. Built with Go / Golang and Gin. Click view movie to visit the api and recieve a response of my favourite movie!',
     image: 'https://i.imgur.com/I9LVx4z.jpg',
-    website: 'n/a',
+    website: "https://entertainment-api.onrender.com/movie/title/?q=2001",
     code: 'https://github.com/oranges0da/entertainment-api',
     showWeb: false
   },
