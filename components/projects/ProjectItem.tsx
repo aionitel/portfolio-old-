@@ -48,7 +48,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               <BiLinkExternal className='text-3xl mt-[5px] pr-1.5' />
             </a>
             :
-            <a href='https://milkapi.app/movie/title/?q=2001' target='__blank' className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
+            <a href='https://entertainment-api.onrender.com/movie/title/?q=2001' target='__blank' className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
               <h1 className='my-2 px-2.5'>View Movie</h1>
               <MdMovie className='text-3xl mt-[5px] pr-1.5' />
             </a>
