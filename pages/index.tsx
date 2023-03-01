@@ -13,12 +13,11 @@ const Home: NextPage = () => {
       </Head>
       <div className='h-screen'>
         <div
-          className='text-center flex my-8'
-          style={{ height: '60vh' }}
+          className='text-center flex my-8 h-3/4'
         >
           <Typewriter />
         </div>
-        <div className='flex justify-center text-7xl'>
+        <div className='flex justify-center text-7xl w-full bottom-0'>
           <BiDownvote className='block lg:hidden animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
             window.scrollTo({ top: screen.height, behavior: 'smooth' })
           }} />

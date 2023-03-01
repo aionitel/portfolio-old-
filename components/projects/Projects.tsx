@@ -17,15 +17,6 @@ const ProjectData: ProjectType[] = [
     showWeb: true
   },
   {
-    Icon: AiOutlineApi,
-    title: 'Entertainment API',
-    desc: 'API that is up for consumption and completely free to use. Serves information about movies, TV series, books, and music. Built with Go / Golang and Gin. Click view movie to visit the api and recieve a JSON response of my favourite movie!',
-    image: 'https://i.imgur.com/I9LVx4z.jpg',
-    website: "https://entertainment-api.onrender.com/movie/title/?q=2001",
-    code: 'https://github.com/oranges0da/entertainment-api',
-    showWeb: false
-  },
-  {
     Icon: MdOutlineStorefront,
     title: 'Dipped Station',
     desc: 'Completely custom full-stack merchant store for chocolate dipped strawberries. Frontend built using Next.js and Tailwind CSS. Backend built with Node.js and Express, using Stripe as a payment processor.',
@@ -33,6 +24,15 @@ const ProjectData: ProjectType[] = [
     website: 'https://dippedstation.com',
     code: null,
     showWeb: true
+  },
+  {
+    Icon: AiOutlineApi,
+    title: 'Entertainment API',
+    desc: 'API that is up for consumption and completely free to use. Serves information about movies, TV series, books, and music. Built with Go / Golang and Gin. Click view movie to visit the api and recieve a JSON response of my favourite movie!',
+    image: 'https://i.imgur.com/I9LVx4z.jpg',
+    website: "https://entertainment-api.onrender.com/movie/title/?q=2001",
+    code: 'https://github.com/oranges0da/entertainment-api',
+    showWeb: false
   },
 ]
 
