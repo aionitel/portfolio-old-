@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
       <div className='h-screen'>
         <div
-          className='text-center flex my-8 h-3/4'
+          className='text-center flex my-8 lg:h-2/3 2xl:h-3/4'
         >
           <Typewriter />
         </div>

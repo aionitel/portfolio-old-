@@ -13,12 +13,11 @@ module.exports = {
         'caveat': ['Caveat']
       },
       colors: {
+        "background": "#201f24",
         'white': '#fff',
         'red': '#ff0000',
         'cyan': '#00ffff',
         'blue': '#1552F0',
-        'cream': '#F0E7DB',
-        'creamAgain': '#F1E9DE',
         'lead': '#201f24',
         'gray': '#171717',
         'lightgray': '#202020',

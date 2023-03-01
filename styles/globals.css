@@ -9,10 +9,5 @@
 
 html,
 body {
-  background: #F0E7DB;
-}
-
-[data-theme='dark'],
-[data-theme='dark'] body {
   background: #201f24;
 }
