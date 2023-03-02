@@ -22,7 +22,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           hidden: { opacity: 0, scale: 1 }
         }}
         src={project.image} 
-        className='rounded-md w-[500px] h-full'
+        className='rounded-md w-1/2 mx-auto h-full'
       />
       <motion.div 
         initial="hidden"
@@ -39,8 +39,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <project.Icon className='text-3xl mr-0.5' />
           <h1>{project.title}</h1>
         </div>
-        <p className='text-chartGray ml-1'>{project.desc}</p>
-        <div className='flex justify-center lg:justify-end mt-14'>
+        <p className='ml-1'>{project.desc}</p>
+        <div className='flex justify-center lg:justify-end mt-14 text-almostBlack'>
           { project.showWeb 
             ? 
             <a href={project.website} target='__blank' className='hover:cursor-pointer mx-2 bg-orange-300 hover:bg-orange-400 rounded-lg hover:rounded-none transition-all duration-300 flex hover:underline underline-offset-4'>
