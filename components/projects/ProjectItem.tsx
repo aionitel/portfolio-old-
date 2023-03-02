@@ -39,7 +39,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <project.Icon className='text-3xl mr-0.5' />
           <h1>{project.title}</h1>
         </div>
-        <p className='ml-1'>{project.desc}</p>
+        <p className='ml-1 text-chartGray'>{project.desc}</p>
         <div className='flex justify-center lg:justify-end mt-14 text-almostBlack'>
           { project.showWeb 
             ? 

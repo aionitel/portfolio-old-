@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         >
           <Typewriter />
         </div>
-        <div className='flex justify-center text-7xl w-full bottom-0'>
+        <div className='justify-center text-7xl w-full bottom-0 hidden lg:flex'>
           <BiDownvote className='block lg:hidden animate-pulse hover:animate-none hover:cursor-pointer' onClick={() => {
             window.scrollTo({ top: screen.height, behavior: 'smooth' })
           }} />
